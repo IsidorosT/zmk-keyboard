@@ -73,4 +73,15 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
+
+    joystick {
+        compatible = "zmk,joystick";
+        label = "JOYSTICK";
+        bindings = <
+            &beh_mouse_x
+            &beh_mouse_y
+            &beh_mouse_btn_left
+            &beh_mouse_btn_right
+        >;
+    };
 };
